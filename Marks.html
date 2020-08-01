@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Marks </title>
+</head>
+<body>
+<form action="" method="post" enctype="text/plain">
+	<h1> CC-2 </h1>
+<p><label for ="UID"> Uid:</label>
+	<input type="text" name="" value""></p>
+<p><label for="Name">Name:</label>
+	<input type="text" name="" value=""></p>
+<hr>
+<table style="margin-left: 20%; margin-right: 20%; width: 60%; padding: 1%; text-align: left; font-weight: bold;  ">
+                <tr style="width: 100%; padding: 1%;">
+                        <td style="width: 40%;">DIP</td>
+                        <td style="width: 60%;"><input id="dip" type="text" /></td>
+                </tr>    
+                <tr style="width: 100%;">
+                        <td style="width: 40%;">DAA</td>
+                        <td style="width: 60%;"><input id="daa" type="text" /></td>
+                </tr>    
+                <tr style="width: 100%;">
+                        <td style="width: 40%;">CN</td>
+                        <td style="width: 60%;"><input id="cn" type="text" /></td>
+                </tr> \
+                <tr style="width: 100%;">
+                        <td style="width: 40%;">MAI</td>
+                        <td style="width: 60%;"><input id="mai" type="text" /></td>
+                </tr>
+                <tr style="width: 100%;">
+                        <td style="width: 40%;"></td>
+                        <td style="width: 60%;"><button id="btn" type="button" onclick="cal()">Submit</button></td>
+                </tr>    
+
+                <tr style="width: 100%;">
+                        <td style="width: 40%;"></td>
+                        <td style="width: 60%;"><div id="output"></div></td>
+                </tr>
+        </table>
+        <div id="abcd">
+        	Result
+        </div>
+        <script>
+    
+    function cal(){
+        var dip=document.getElementById('ms').value;
+        var daa=document.getElementById('daa').value;
+        var cn=document.getElementById('cn').value;
+        var mai=document.getElementById('mai').value;
+        var c = Number(dip) + Number(daa) + Number(cn)+Number(mai);
+        c = c/4;
+        document.getElementById('abcd').innerHTML= c;
+    }
+    
+    </script>
+</form>
+</body>
+</html>
